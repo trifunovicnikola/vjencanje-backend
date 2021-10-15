@@ -37,7 +37,7 @@ Route::post('maticar-deaktiviraj/{id}', 'maticarController@deaktiviraj');
 Route::post('odbornik-dodaj', 'odbornikController@dodaj');
 Route::post('odbornik-deaktiviraj/{id}', 'odbornikController@deaktiviraj');
 Route::post('register','authController@register');
-Route::post('login', 'authController@login');
+Route::post('/login', 'authController@login');
 Route::get('rezervacije', 'reservationController@show');
 Route::post('dodaj-rezervaciju', 'reservationController@addReservation');
 Route::get('obrisi-rezervaciju/{id}', 'reservationController@delete');
